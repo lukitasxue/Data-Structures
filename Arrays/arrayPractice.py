@@ -37,7 +37,7 @@ if not found:
 #arr[start : end (not inclued) : step]
 array_test = [0,1,2,3,4,5,6,7,8,9]
 # print(array_test[4:6])
-# print(array_test[:8])
+print(array_test[:8])
 # print(array_test[4:])
 # print(array_test[:])
 # print(array_test[0:7:2])
@@ -58,6 +58,12 @@ print(new_array)
 new_array_reverse = sorted(array_sorting, reverse=True)
 print(new_array_reverse)
  
+# sort strings
+arr = ["apple", "banana", "kiwi", "grape"]
+arr.sort(key=len)  # Sort by string length
+print(arr)
+
+
 # Hello world
 # git init
 # git remote add origin link
