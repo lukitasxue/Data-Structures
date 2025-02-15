@@ -34,12 +34,30 @@ if not found:
 
 
 #slice parts of an array:
-#arr[start : end : step]
+#arr[start : end (not inclued) : step]
+array_test = [0,1,2,3,4,5,6,7,8,9]
+# print(array_test[4:6])
+# print(array_test[:8])
+# print(array_test[4:])
+# print(array_test[:])
+# print(array_test[0:7:2])
+# print(array_test[-3:])
+# print(array_test[::-1])
 
+#sorting elements of an array:
 
+array_sorting = [3,2,6,8,1,9,5,0,4,7]
+array_sorting.sort() #modifies original list
+print(array_sorting)
 
+array_sorting = [3,2,6,8,1,9,5,0,4,7] 
+print(array_sorting)
+new_array = sorted(array_sorting) # returns a new sorted list w/o modifiying the original
+print(new_array)
 
-
+new_array_reverse = sorted(array_sorting, reverse=True)
+print(new_array_reverse)
+ 
 # Hello world
 # git init
 # git remote add origin link
