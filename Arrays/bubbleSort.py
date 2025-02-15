@@ -7,17 +7,20 @@
 arr = [3,2,6,8,1,9,5,0,4,7]
 
 def bubble_sort(arr):
+    index_length = len(arr) - 1 # there is no number to compare for the last set
+    finished = False
 
-    for i in range(len(arr)):
-        for j in range (0, n -i-1):
-            x = arr[j]
-            y = arr[j+1]
+    while not finished:
+        finished = True
+        for i in range(0, index_length):
+            if arr[i] > arr[i+1]:
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                finished = False #swap ocurred, so we need other pass
+        
+    return arr
+            
 
-            if x > y:
-                #swap numbers
-                arr[j], arr[j+1] = arr[j+1], arr[j]
 
 
 
-
-bubble_sort(arr)
+print(bubble_sort([3,2,6,8,1,9,5,0,4,7]))
